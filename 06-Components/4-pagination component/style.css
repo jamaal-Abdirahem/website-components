@@ -1,0 +1,86 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR :#087F5B
+GREY COLOR:#343A40
+TINT COLOR:#099268
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "inter", sans-serif;
+  color: #343a40;
+  /* background-color: #087f5b; */
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  width: 800px;
+  font-size: 18px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.links:link,
+.links:visited {
+  height: 36px;
+  width: 36px;
+  text-decoration: none;
+  color: #343a40;
+  font-size: 18px;
+  font-weight: 500;
+  /* display: inline-block; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links:hover,
+.links:active,
+.links.links--current {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #087f5b;
+  background: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+  background-color: #087f5b;
+}
+.btn:hover .icon {
+  stroke: #fff;
+}
+.icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+}
+.dots {
+  color: #868e96;
+}
